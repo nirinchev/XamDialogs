@@ -42,7 +42,19 @@ namespace XamDialogs
 				mDatePicker.Date = (NSDate)DateTime.SpecifyKind(value, DateTimeKind.Local);
 			}
 		}
-			
+
+		public int MinuteInterval
+		{
+			get
+			{
+				return (int)mDatePicker.MinuteInterval;
+			}
+			set
+			{
+				mDatePicker.MinuteInterval = value;
+			}
+		}
+
 		/// <summary>
 		/// Called when the selected data has changed
 		/// </summary>
